@@ -55,13 +55,22 @@ public class Session1Homework : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        NumberOfFighters[2] = 30;
+        NumberOfFighters.Add(1);
+        NumberOfFighters.Add(2);
+        NumberOfFighters.Add(3);
+        NumberOfFighters.Add(4);
 
-        Debug.Log(NameOfFighters[2].ToString());
+        NameOfFighters.Add(5);
+        NameOfFighters.Add(6);
+        NameOfFighters.Add(7);
+        NameOfFighters.Add(8);
 
-        NumberOfFighters.Add(9);
 
-        Debug.Log(NameOfFighters[NameOfFighters.Count - 1].ToString());
+        Debug.Log(NameOfFighters[0]);
+
+        
+
+        Debug.Log(NameOfFighters[NameOfFighters.Count - 1]);
 
 
         NameOfFighters.Clear();
@@ -75,10 +84,7 @@ public class Session1Homework : MonoBehaviour {
         {
             Debug.Log("Anna's Opponent is" + LevelOfFighters.Values);
         }
-        else
-        {
-            Debug.Log("Anna will lose");
-        }
+       
         // 6.Create a function that prints the declared variables
 
     }
