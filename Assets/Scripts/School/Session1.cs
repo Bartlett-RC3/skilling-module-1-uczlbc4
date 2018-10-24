@@ -17,7 +17,7 @@ public class Session1 : MonoBehaviour {
     public string myFirstString = "My text is somewhere.";
 
     // Logical variable
-    bool myFirstBoolean = true;
+    readonly bool myFirstBoolean = true;
 
     // Data structures
     // Scope -- Type -- Values
@@ -46,7 +46,7 @@ public class Session1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("Hello world!");
+       
 	}
 
     int AddtionOfNumbers(int number1, int number2)
