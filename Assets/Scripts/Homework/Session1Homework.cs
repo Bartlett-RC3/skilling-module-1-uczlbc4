@@ -12,6 +12,7 @@ public class Session1Homework : MonoBehaviour {
     public int SmallestInteger = int.MinValue;
     public int BiggestInteger = int.MaxValue;
     public bool myBoolean = true;
+    int counter = 0;
 
 
     // 2.Declare a float variable and set a value
@@ -91,6 +92,9 @@ public class Session1Homework : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        Debug.Log("Anna Win!");
+         
+        Debug.Log(counter.ToString());
+        counter++;
+        Debug.Log("Time:" + Time.deltaTime);
     }
 }
